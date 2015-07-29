@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     //logic to run the correct function
     if ($langSelected === "French") {   
-    }
+    
     } else if ($langSelected === "Italian") {
         html = Translation.getItalian($arrOfUserInput);
     } else if ($langSelected === "Spanish") {
