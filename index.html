@@ -2,15 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>TEMPLATE</title>
+	<title>Holiday Translation</title>
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
 	<div id="main-wrapper">
-	</div>
+
+    <h3> Holiday Translation</h3>
+    <fieldset>
+      <legend>Type a holiday message you want translated</legend>
+      <label for="inputArea">Holiday Message</label>
+      <textarea id="user-input" type = "text" name="inputArea"></textarea>
+    </fieldset>
+   
+    <fieldset>
+      <legend>What language do you want to translate your message to?</legend>
+    
+     
+      <datalist id="language">
+          <option value="Select a Language"
+          <option value="French">
+          <option value="Italian">
+          <option value="Spanish">
+      </datalist>
+       <label for="language">Select your Language</label>
+    <select id="language" name="type">
+      <option>French</option>
+      <option>Italian</option>
+      <option>Spanish</option>
+    </select>
+
+    </fieldset>
+  </div>
 
 	<!--scripts uncomment if needed-->
 	<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
 	<script src="scripts/main.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
