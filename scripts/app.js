@@ -7,24 +7,28 @@ $(document).ready(function(){
     //get selection from select menu
     var $langSelected = $("#lang :selected").text();
     var html = "<div>";
-
+    var returnArr = [];
     //logic to run the correct function
     if ($langSelected === "French") {   
-    
+      translate('getFrench');
     } else if ($langSelected === "Italian") {
-      html = Translation.getItalian($arrOfUserInput);
+      translate('getItalian');
     } else if ($langSelected === "Spanish") {
-      var returnArr = [];
+      translate('getSpanish');
+    }
+
+    //put the output in the DOM
+    $("#user-output").html(html);
+
+    //Function for translating takes the language method as argument
+    function translate(langMethod){
+      returnArr = [];
       for (var i = 0; i < $arrOfUserInput.length; i++) {
-        returnArr[returnArr.length] = Translation.getSpanish($arrOfUserInput[i]);
+        returnArr[returnArr.length] = Translation[langMethod]($arrOfUserInput[i]);
       }
       html = returnArr.join(" ");
       html += "</div>";
     }
-    $("#user-output").html(html);
   });
 });
 
-function translate(lang){
-
-}

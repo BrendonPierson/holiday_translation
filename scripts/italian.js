@@ -8,7 +8,7 @@ var Translation = function(Translation){
   "new": "Nuovo"
   }
   
-  Translation.getItalian: function(word){
+  Translation.getItalian = function(word){
     return italian[word];
   }
 
