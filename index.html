@@ -17,27 +17,26 @@
     </fieldset>
    
     <fieldset>
-      <legend>What language do you want to translate your message to?</legend>
+        <legend>What language do you want to translate your message to?</legend>
     
-     
-      <datalist id="language">
-          <option value="Select a Language"
-          <option value="French">
-          <option value="Italian">
-          <option value="Spanish">
-      </datalist>
-       <label for="language">Select your Language</label>
-    <select id="language" name="type">
-      <option>French</option>
-      <option>Italian</option>
-      <option>Spanish</option>
-    </select>
+        <label for="language">Select your Language</label>
+        <select id="lang" name="type">
+          <option>French</option>
+          <option>Italian</option>
+          <option>Spanish</option>
+        </select>
 
     </fieldset>
   </div>
 
+  <button type="button" id="submit">Translate</button>
+
+  <div id="user-output"></div> 
+
+
 	<!--scripts uncomment if needed-->
-	<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="scripts/main.js"></script>
   <script src="scripts/app.js"></script>
 </body>
+
