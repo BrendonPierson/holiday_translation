@@ -6,16 +6,13 @@
             "christmas": "navidad",
             "and": "y",
             "happy": "prospero",
-            "new_year": "ano"
+            "new": "nuevo",
+            "year": "ano"
             }
 
         return {
             getSpanish: function(userInput) {
-                var output = "<div>";;
-                for (var i = 0; i < $arrOfUserInput.length; i++) {
-                    output += spanish[$arrOfUserInput[i]] + " ";
-                }
-                output += "</div>"
+                return spanish[userInput]
             }
         }
 
