@@ -2,12 +2,19 @@
 
 var Translation = (function () {
     var spanish = {
-        "merry": "feliz",
-        "christmas": "navidad",
+        "merry": "Feliz",
+        "christmas": "Navidad",
         "and": "y",
-        "happy": "prospero",
-        "new": "nuevo",
-        "year": "ano"
+        "happy": "Prospero",
+        "new": "Nuevo",
+        "year": "a&ntilde;o",
+        "goodbye": "Au Revoir",
+        "shit": "Mierda!",
+        "damn":  "Caramba!",
+        "blessings": "Benedici&oacute;n",
+        ["thank you"]: "Gracias"
+        
+
         }
 
     return {
