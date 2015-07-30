@@ -1,16 +1,49 @@
+html, body, #main-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+
 body  {
-  font-family: Times, "Times New Roman", serif;
-  font-size: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
   margin-left: 5%;
   margin-top: 5%;
   margin-right: 5%;
-  background-color: lightgray;
+  background-image: url('http://wallpaperskyline.com/wp-content/uploads/2014/12/snowy-christmas-tree-with-lights-night.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  letter-spacing: .1em;
+  color: #FFF;
+  text-shadow: 0 3px #000;
+}
+
+
+button {
+  margin: 2% 0 0 20%;
+  background: #FFF;
+  color: #000;
+  /*background: rgba(00,00,00,.8);*/
 }
 
 h3 {
   font-size: 1.5em;
 }
 
+textarea {
+  color: #000;
+}
 fieldset {
-  background-color: gainsboro;
+  margin: 5% 10% 0 10%;
+  background-color: rgba(00,00,00,.4);
+}
+
+#user-output {
+  visibility: hidden;
+  display: inline-block;
+  text-align: center;
+  margin: 5% auto;
+  padding: 5%;
+  background-color: rgba(00,00,00,.6);
+  border-radius: 100%;
 }
