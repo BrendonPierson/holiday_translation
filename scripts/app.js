@@ -84,7 +84,7 @@ $(document).ready(function(){
     $("#user-output").html(html);
 
     // Show output and styling on click.
-    $("#user-output").show()    
+    $("#user-output").css("display", "inline-block")    
 
     //Function for translating takes the language method as argument
     function translate(langMethod){

@@ -39,10 +39,10 @@ fieldset {
 }
 
 #user-output {
-  visibility: hidden;
-  display: inline-block;
+  /*visibility: hidden;*/
+  display: none;
   text-align: center;
-  margin: 5% auto;
+  margin: 2% 0 0 33%;
   padding: 5%;
   background-color: rgba(00,00,00,.6);
   border-radius: 100%;
